@@ -12,7 +12,7 @@ const ProjectContainer = () => {
   return (
     <Grid container>
       {/* Project Item */}
-      <Grid item lg={9} sx={{ background: "#001E3C" }}>
+      <Grid item xs={12} lg={9} sx={{ background: "#001E3C" }}>
         <Container maxWidth="sm" sx={{ py: 4 }}>
           {/* Single Project */}
           {data.map((data, index) => (
@@ -21,7 +21,7 @@ const ProjectContainer = () => {
         </Container>
       </Grid>
       {/* Tag Item   */}
-      <Grid item lg={3} sx={{ background: "#0A1929", }}>
+      <Grid item xs={12} lg={3} sx={{ background: "#001E3C", }}>
         <Typography>Hello Bro</Typography>
       </Grid>
     </Grid>

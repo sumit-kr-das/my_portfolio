@@ -31,12 +31,12 @@ const Project = ({ data }) => {
         <Typography sx={[titleStyle, { fontWeight: "400" }]}>
           {data.title}
         </Typography>
-
         <Box
           sx={{  
-            display: "flex", 
-            alignItems: "center", 
-            flexDirection: "row"
+          display: "flex", 
+          alignItems: "center", 
+          flexDirection: "row",
+          flexWrap: "wrap"
         }}
         >
           {data.tags.map((tagData, index) => (
@@ -46,7 +46,7 @@ const Project = ({ data }) => {
           ))}
         </Box>
         <Typography
-          sx={[titleStyle, { fontWeight: "300", fontSize: "14px", mb: 1 }]}
+          sx={[titleStyle, { fontWeight: "300", fontSize: {xs:"10px",md:"14px"}, mb: 1 }]}
         >
           {data.des}
         </Typography>
