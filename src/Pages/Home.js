@@ -1,23 +1,32 @@
+import { Box, Typography } from "@mui/material";
 import React from "react";
-import { Box } from "@mui/material";
-
 import Navigation from "../components/navigation/Navigation";
-import ProjectContainer from "../components/ProjectContainer/ProjectContainer";
+import LineBar from "../components/LineBar/LineBar";
 
+const titleStyle = {
+  color: "#ffffff",
+  fontFamily: "'Fira Code', monospace",
+};
 
 const Home = () => {
   return (
     <>
       <Navigation />
+      <LineBar degree="120deg" />
       <Box
         sx={{
-          borderImage:
-            "linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3",
-          borderWidth: "4px 0 0",
-          borderTopStyle: "solid",
+          height: "100vh",
+          width: "100%",
+          background: "#001E3C",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
-      ></Box>
-      <ProjectContainer />
+      >
+        <Typography sx={[titleStyle, { fontWeight: "400" }]}>
+          Home is empty
+        </Typography>
+      </Box>
     </>
   );
 };

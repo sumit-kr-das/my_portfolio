@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Project from "../Project/Project";
+import Tags from '../Tags/Tags';
 
 import { Box } from "@mui/system";
 import { Container, Grid, Typography } from "@mui/material";
@@ -21,8 +22,8 @@ const ProjectContainer = () => {
         </Container>
       </Grid>
       {/* Tag Item   */}
-      <Grid item xs={12} lg={3} sx={{ background: "#001E3C", }}>
-        <Typography>Hello Bro</Typography>
+      <Grid item xs={12} lg={3} sx={{ background: "#001E3C", px: {xs:2,md:0} }}>
+        <Tags />
       </Grid>
     </Grid>
   );

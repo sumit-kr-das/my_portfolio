@@ -1,5 +1,6 @@
 import React from "react";
 import { AppBar, Box, MenuItem, Toolbar, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -19,17 +20,17 @@ const Navigation = () => {
               variant="h6"
               color="inherit"
             >
-              Sumit
+              #sumit
             </Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <MenuItem sx={{ fontFamily: "'Fira Code', monospace" }}>
+            <MenuItem component={Link} to="/" sx={{ fontFamily: "'Fira Code', monospace" }}>
               Home
             </MenuItem>
-            <MenuItem sx={{ fontFamily: "'Fira Code', monospace" }}>
+            <MenuItem component={Link} to="/projects" sx={{ fontFamily: "'Fira Code', monospace" }}>
               Projects
             </MenuItem>
-            <MenuItem sx={{ fontFamily: "'Fira Code', monospace" }}>
+            <MenuItem component={Link} to="/blog" sx={{ fontFamily: "'Fira Code', monospace" }}>
               Blog
             </MenuItem>
           </Box>
