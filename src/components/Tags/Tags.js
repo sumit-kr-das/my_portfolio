@@ -52,65 +52,65 @@ const Tags = () => {
       </Box>
       <Box sx={{ pt: 2 }}>
         <Typography sx={titleStyle}>HTML</Typography>
-        <Box class="container">
-          <Box class="progress progress-striped">
-            <Box class="progress-bar"></Box>
+        <Box className="container">
+          <Box className="progress progress-striped">
+            <Box className="progress-bar"></Box>
           </Box>
         </Box>
       </Box>
       <Box sx={{ pt: 1 }}>
         <Typography sx={titleStyle}>CSS</Typography>
-        <Box class="container">
-          <Box class="progress progress-striped">
-            <Box class="progress-bar progress-bar2"></Box>
+        <Box className="container">
+          <Box className="progress progress-striped">
+            <Box className="progress-bar progress-bar2"></Box>
           </Box>
         </Box>
       </Box>
       <Box sx={{ pt: 1 }}>
         <Typography sx={titleStyle}>JavaScript</Typography>
-        <Box class="container">
-          <Box class="progress progress-striped">
-            <Box class="progress-bar progress-bar3"></Box>
+        <Box className="container">
+          <Box className="progress progress-striped">
+            <Box className="progress-bar progress-bar3"></Box>
           </Box>
         </Box>
       </Box>
       <Box sx={{ pt: 1 }}>
         <Typography sx={titleStyle}>ReactJS</Typography>
-        <Box class="container">
-          <Box class="progress progress-striped">
-            <Box class="progress-bar progress-bar4"></Box>
+        <Box className="container">
+          <Box className="progress progress-striped">
+            <Box className="progress-bar progress-bar4"></Box>
           </Box>
         </Box>
       </Box>
       <Box sx={{ pt: 1 }}>
         <Typography sx={titleStyle}>Node</Typography>
-        <Box class="container">
-          <Box class="progress progress-striped">
-            <Box class="progress-bar progress-bar5"></Box>
+        <Box className="container">
+          <Box className="progress progress-striped">
+            <Box className="progress-bar progress-bar5"></Box>
           </Box>
         </Box>
       </Box>
       <Box sx={{ pt: 1 }}>
         <Typography sx={titleStyle}>MongoDB</Typography>
-        <Box class="container">
-          <Box class="progress progress-striped">
-            <Box class="progress-bar progress-bar6"></Box>
+        <Box className="container">
+          <Box className="progress progress-striped">
+            <Box className="progress-bar progress-bar6"></Box>
           </Box>
         </Box>
       </Box>
       <Box sx={{ pt: 1 }}>
         <Typography sx={titleStyle}>MUI</Typography>
-        <Box class="container">
-          <Box class="progress progress-striped">
-            <Box class="progress-bar progress-bar7"></Box>
+        <Box className="container">
+          <Box className="progress progress-striped">
+            <Box className="progress-bar progress-bar7"></Box>
           </Box>
         </Box>
       </Box>
       <Box sx={{ pt: 1 }}>
         <Typography sx={titleStyle}>Styled Components</Typography>
-        <Box class="container">
-          <Box class="progress progress-striped">
-            <Box class="progress-bar progress-bar9"></Box>
+        <Box className="container">
+          <Box className="progress progress-striped">
+            <Box className="progress-bar progress-bar9"></Box>
           </Box>
         </Box>
       </Box>
