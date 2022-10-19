@@ -13,7 +13,6 @@ export default function Navigation({ theme, toggleTheme }) {
 					<NavIcon src="/assets/logo_light.png" alt="nav_logo" />
 				)}
 			</Link>
-
 			<RightContainer>
 				<Text>Switch Theme</Text>
 				<Cursor onClick={toggleTheme}>
@@ -35,31 +34,26 @@ const Nav = styled.nav`
 	justify-content: space-between;
 	padding: 2rem 8rem;
 `;
-
 const Cursor = styled.div`
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 `;
-
 const NavIcon = styled.img`
 	width: 140px;
 `
 const ThemeLogo = styled.img`
-	width: 50px;
+	width: 40px;
 `
-
 const RightContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 20px;
 `;
-
 const Text = styled.p`
 	font-weight: 500;
 `;
-
 const Hamburger = styled.div`
 	width: 40px;
 	height: 40px;

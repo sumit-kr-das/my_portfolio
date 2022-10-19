@@ -20,6 +20,6 @@ export const LightTheme = {
 };
 
 export const DarkTheme = {
-	body: "#121212",
+	body: "#0A1929",
 	text: "#fff",
 };
