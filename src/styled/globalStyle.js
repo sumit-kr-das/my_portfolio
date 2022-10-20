@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Raleway', sans-serif;
         background: ${({ theme }) => theme.body};
         color: ${({ theme }) => theme.text};
-        transition: all 0.4s linear;
+        /* transition: all 0.4s linear; */
     }
 `;
 
