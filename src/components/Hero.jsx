@@ -24,16 +24,41 @@ const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width: 1200px){
+        margin: 4rem;
+    }
+    @media(max-width:700px){
+        margin: 6rem 2rem;
+    }
 `
 
 const Heading = styled.h1`
     font-size: 6rem;
+    @media(max-width: 1373px){
+        font-size: 5rem;
+    }
+    @media(max-width: 1200px){
+        font-size: 4rem;
+    }
+    @media(max-width: 1100px){
+        font-size: 3.5rem;
+    }
+    @media(max-width: 460px){
+        font-size: 2.5rem;
+    }
 `
 
 const Paragraph = styled.p`
     font-size: 1.4rem;
     margin: 1rem 0;
     color: ${(props) => props.theme === "dark" ? "#fff" : "#353535"};
+    line-height: 25px;
+    @media(max-width: 1200px){
+        font-size: 1.2rem;
+    }
+    @media(max-width: 460px){
+        font-size: 1rem;
+    }
 `
 
 const BtnContainer = styled.div`
@@ -58,6 +83,9 @@ const ButtonSecondary = styled(Button)`
 
 const LeftContainer = styled.div`
     flex: 0 1 60%;
+    @media(max-width: 870px){
+        flex: 0 1 100%;
+    }
 `
 
 const RightContainer = styled.div`
@@ -66,4 +94,7 @@ const RightContainer = styled.div`
     justify-content: center;
     flex: 0 1 30%;
     background-color: red;
+    @media(max-width: 870px){
+        display: none;
+    }
 `

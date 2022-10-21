@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export default function Navigation({ theme, toggleTheme }) {
-	console.log(theme);
+
 	return (
 		<Nav>
 			<Link to="/">
@@ -32,7 +32,13 @@ const Nav = styled.nav`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 2rem 8rem;
+	margin: 2rem 8rem;
+	@media(max-width: 1200px){
+        margin: 4rem;
+    }
+	@media(max-width:700px){
+        margin: 4rem 2rem;
+    }
 `;
 const Cursor = styled.div`
 	cursor: pointer;
@@ -53,6 +59,9 @@ const RightContainer = styled.div`
 `;
 const Text = styled.p`
 	font-weight: 500;
+	@media(max-width:700px){
+        display: none;
+    }
 `;
 const Hamburger = styled.div`
 	width: 40px;

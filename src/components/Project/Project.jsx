@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, BtnTags, Heading, Wrapper, ImgContainer, Thumbnil, DetailsContainer, SubHeading, Title, TitleContainer, BtnFilled, BtnOutlined, SubHeadingContainer, Paragraph } from './styled.project';
+import { Container, BtnTags, Heading, Wrapper, TitleSubContainer, WrapperReverse, ImgContainer, Thumbnil, DetailsContainer, SubHeading, Title, TitleContainer, BtnFilled, BtnOutlined, SubHeadingContainer, Paragraph } from './styled.project';
 
 import { project1, project2 } from './projectData'
 
@@ -12,15 +12,17 @@ function LeftImage({ project, theme }) {
       <DetailsContainer>
         <TitleContainer>
           <Title>{project.title}</Title>
-          <BtnFilled href={project.live} theme={theme}>Web</BtnFilled>
-          {
-            project.client &&
-            <BtnOutlined href={project.client} theme={theme}>Client</BtnOutlined>
-          }
-          {
-            project.server &&
-            <BtnOutlined href={project.server} theme={theme}>Server</BtnOutlined>
-          }
+          <TitleSubContainer>
+            <BtnFilled href={project.live} theme={theme}>Web</BtnFilled>
+            {
+              project.client &&
+              <BtnOutlined href={project.client} theme={theme}>Client</BtnOutlined>
+            }
+            {
+              project.server &&
+              <BtnOutlined href={project.server} theme={theme}>Server</BtnOutlined>
+            }
+          </TitleSubContainer>
         </TitleContainer>
         <SubHeading>Description:</SubHeading>
         <SubHeadingContainer>
@@ -44,7 +46,7 @@ function LeftImage({ project, theme }) {
 
 function RightImage({ project, theme }) {
   return (
-    <Wrapper>
+    <WrapperReverse>
       <DetailsContainer>
         <TitleContainer>
           <Title>{project.title}</Title>
@@ -77,7 +79,7 @@ function RightImage({ project, theme }) {
       <ImgContainer>
         <Thumbnil src={project.thumbnil} />
       </ImgContainer>
-    </Wrapper>
+    </WrapperReverse>
   )
 }
 

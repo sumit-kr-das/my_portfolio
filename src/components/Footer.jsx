@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Paragraph, SubHeading } from './Project/styled.project';
+import { Paragraph } from './Project/styled.project';
 
 function LeftContainer({ theme }) {
     return (
         <CopyrightContainer>
-            <div>
+            <CopyrightWrapper>
                 <Link to="/">
                     {theme === "light" ? (
                         <NavIcon src="/assets/logo_dark.png" alt="nav_logo" />
@@ -17,8 +17,7 @@ function LeftContainer({ theme }) {
                 </Link>
                 <Paragraph theme={theme}>Feel free to reach out to me any time. I prefer to talk over email or Linkedin, Let’s create something amazing together.</Paragraph>
                 <SubHeading>contact.sumitkrdas@gmail.com</SubHeading>
-            </div>
-            <Copyright>@2022 by <b>Sumit Kumar Das</b></Copyright>
+            </CopyrightWrapper>
         </CopyrightContainer>
     )
 }
@@ -39,10 +38,13 @@ function RightContainer({ theme }) {
 
 export default function Footer({ theme }) {
     return (
-        <Container>
-            <LeftContainer theme={theme} />
-            <RightContainer theme={theme} />
-        </Container>
+        <>
+            <Container>
+                <LeftContainer theme={theme} />
+                <RightContainer theme={theme} />
+            </Container>
+            <Copyright>@ Copyright 2022. Designed by <b>Sumit Kumar Das</b>.</Copyright>
+        </>
     )
 }
 
@@ -52,18 +54,45 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width: 1200px){
+        margin: 8rem 4rem 4rem 4rem;
+    }
+    @media(max-width: 800px){
+        flex-direction: column;
+    }
+    @media(max-width:700px){
+        margin: 4rem 2rem;
+    }
 `;
 
 const CopyrightContainer = styled.div`
     flex: 0 1 40%;
-`
+    width: 100%;
+    @media(max-width: 800px){
+        flex: 0 1 100%;
+    }
+`;
+
+const CopyrightWrapper = styled.div`
+    width: 100%;
+`;
 
 const Copyright = styled.p`
-    margin-top: 4rem;
+    margin: 0 8rem 2rem 8rem;
+    line-height: 25px;
+    @media(max-width: 1200px){
+        margin: 8rem 4rem 4rem 4rem;
+    }
+    @media(max-width:700px){
+        margin: 4rem 2rem;
+    }
 `
 
 const ContactContainer = styled.div`
     flex: 0 1 40%;
+    @media(max-width: 800px){
+        flex: 0 1 100%;
+    }
 `
 
 const NavIcon = styled.img`
@@ -115,3 +144,12 @@ const ButtonPrimary = styled(Button)`
     background: ${(props) => props.theme === "dark" ? "#fff" : "#000"};
     color: ${(props) => props.theme === "dark" ? "#000" : "#fff"};
 `
+
+export const SubHeading = styled.p`
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	font-weight: 600;
+    @media(max-width: 800px){
+        font-size: 1.2rem;
+    }
+`;
