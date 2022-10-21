@@ -28,7 +28,7 @@ export default function About({ theme }) {
 }
 
 const Container = styled.section`
-    margin: 8rem 8rem 0 8rem;
+    margin: 12rem 8rem 0 8rem;
 `
 
 const Heading = styled.h1`

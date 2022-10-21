@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	margin: 8rem 8rem 0 8rem;
-	margin: 10rem;
+	margin: 12rem 8rem 0 8rem;
 `;
 
 export const ItemsCenter = styled.div`
