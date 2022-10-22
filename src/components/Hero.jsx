@@ -28,7 +28,7 @@ const Header = styled.header`
         margin: 4rem;
     }
     @media(max-width:700px){
-        margin: 6rem 2rem;
+        margin: 4rem 2rem;
     }
 `
 

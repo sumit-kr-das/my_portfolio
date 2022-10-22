@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, BtnTags, Heading, Wrapper, TitleSubContainer, WrapperReverse, ImgContainer, Thumbnil, DetailsContainer, SubHeading, Title, TitleContainer, BtnFilled, BtnOutlined, SubHeadingContainer, Paragraph } from './styled.project';
 
-import { project1, project2 } from './projectData'
+import { project1, project2, project3 } from './projectData'
 
 function LeftImage({ project, theme }) {
   return (
@@ -89,6 +89,7 @@ export default function Project({ theme }) {
       <Heading>MY FEATURED <br /> PROJECTS</Heading>
       <LeftImage project={project1} theme={theme} />
       <RightImage project={project2} theme={theme} />
+      <LeftImage project={project3} theme={theme} />
     </Container>
   )
 }

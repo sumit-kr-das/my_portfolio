@@ -48,17 +48,18 @@ export const WrapperReverse = styled(ItemsCenter)`
 `;
 
 export const ImgContainer = styled.div`
-	flex: 0 1 40%;
+	flex: 0 1 45%;
 `;
 
 export const Thumbnil = styled.img`
+        width: 100%;
 	@media(max-width: 1200px){
         width: 100%;
     }
 `;
 
 export const DetailsContainer = styled.div`
-	flex: 0 1 40%;
+	flex: 0 1 45%;
 `;
 
 export const SubHeading = styled.p`
