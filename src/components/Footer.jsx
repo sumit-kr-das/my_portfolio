@@ -24,7 +24,7 @@ function LeftContainer({ theme }) {
 
 function RightContainer({ theme }) {
     return (
-        <ContactContainer>
+        <ContactContainer id="contact-with-me">
             <Title>LETS'S CONNECT TOGETHER!</Title>
             <InputContainer>
                 <Input type="text" placeholder="Full Name" />

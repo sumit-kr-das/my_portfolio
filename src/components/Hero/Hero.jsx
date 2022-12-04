@@ -1,20 +1,22 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import RightContainer from './RightContainer';
 
-export default function Hero({theme}) {
+
+export default function Hero({ theme }) {
     return (
         <Header>
-            <LeftContainer>
+            <LContainer>
                 <Heading>HI I’M SUMIT, I BUILD THINGS FOR THE WEB </Heading>
                 <Paragraph theme={theme}>A passionate software developer having an experience of building,deployment and maintaining Web applications with ReactJS, Nodejs, MongoDB and some other cool libraries and frameworks.</Paragraph>
                 <BtnContainer>
-                    <ButtonPrimary href="#" theme={theme}>Say Hi</ButtonPrimary>
-                    <ButtonSecondary href="#" theme={theme}>Connect with me</ButtonSecondary>
+                    <ButtonPrimary href="#contact-with-me" theme={theme}>Say Hi</ButtonPrimary>
+                    <ButtonSecondary href="https://www.linkedin.com/in/sumit-kumar-das-01/" theme={theme}>Connect with me</ButtonSecondary>
                 </BtnContainer>
-            </LeftContainer>
-            <RightContainer>
-                <img src="/assets/avatar.png" alt="hero_img" />
-            </RightContainer>
+            </LContainer>
+            <RContainer>
+                <RightContainer />
+            </RContainer>
         </Header>
     )
 }
@@ -22,7 +24,7 @@ export default function Hero({theme}) {
 const Header = styled.header`
     margin: 4rem 8rem;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
     @media(max-width: 1200px){
         margin: 4rem;
@@ -81,19 +83,18 @@ const ButtonSecondary = styled(Button)`
     color: ${(props) => props.theme === "dark" ? "#fff" : "#000"};
 `
 
-const LeftContainer = styled.div`
+const LContainer = styled.div`
     flex: 0 1 60%;
     @media(max-width: 870px){
         flex: 0 1 100%;
     }
 `
 
-const RightContainer = styled.div`
+const RContainer = styled.div`
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     flex: 0 1 30%;
-    background-color: red;
     @media(max-width: 870px){
         display: none;
     }

@@ -12,6 +12,9 @@ export const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.text};
         transition: all 0.4s linear;
     }
+    html{
+        scroll-behavior: smooth;
+    }
 `;
 
 export const LightTheme = {
