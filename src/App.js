@@ -9,7 +9,7 @@ import { ThemeProvider } from "styled-components";
 function App() {
 	const [theme, toggleTheme] = useDarkMode();
 	const themeMode = theme === "dark" ? DarkTheme : LightTheme;
-    console.log("app => ",theme);
+    // console.log("app => ",theme);
 	return (
 		<ThemeProvider theme={themeMode}>
 			<Router>

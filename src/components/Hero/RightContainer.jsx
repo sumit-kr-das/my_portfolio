@@ -3,23 +3,23 @@ import styled from 'styled-components'
 
 export default function RightContainer() {
     const [data, setData] = useState({});
-    const [loading, setLoading] = useState(true);
+    // const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = () => {
             fetch('https://api.github.com/users/sumit-kr-das')
                 .then(response => response.json())
                 .then(json => setData(json))
-                setLoading(false);
+                // setLoading(false);
         }
         fetchData();
     }, []);
 
-    console.log(loading);
+    // console.log(loading);
     return (
-        <Container>
-            <ImgContainer>
-                <Image src={data.avatar_url} />
+        <Container id="website">
+            <ImgContainer id="personal">
+                <Image src="/assets/avatar.jpg" />
                 <LogoImg src="/assets/octocat.png" />
             </ImgContainer>
             <DetailsWrapper>

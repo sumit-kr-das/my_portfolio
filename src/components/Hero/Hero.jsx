@@ -5,7 +5,7 @@ import RightContainer from './RightContainer';
 
 export default function Hero({ theme }) {
     return (
-        <Header>
+        <Header id="breadcrumb">
             <LContainer>
                 <Heading>HI I’M SUMIT, I BUILD THINGS FOR THE WEB </Heading>
                 <Paragraph theme={theme}>A passionate software developer having an experience of building,deployment and maintaining Web applications with ReactJS, Nodejs, MongoDB and some other cool libraries and frameworks.</Paragraph>
